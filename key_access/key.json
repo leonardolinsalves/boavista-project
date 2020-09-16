@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "apt-entropy-289618",
+  "private_key_id": "82d07c8c1061e677882b6591883adca80ae9a537",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDDuG4vP3N0bzNy\nadrhyK/5L5LbkBbFE5nGd2YpS1EmIuPj1LEN0U40WSAFFS2DkMqRaRYCAHXyJWGv\n/9zv3QTRnZIaUVWwPylVe4RP4qmXcsg+xWK3gIUEEG0EV/jxpxe1efBAWG4usipF\nRu8esvtMomJaOe9hjQQS0IjDwUwN0AjAnnJxQe6d3sWXoiXtsbPFyvTX8tWIAGT7\nKKpPvRwt2Na04MoZ3Bpj5SykNSY0jjQdUEhtdVaG6qa5izaLZhJutyjocvgmwp0a\nbOmS/LfCouV2wZzHc+ZuCOMaEOOkLdO1LRfOsdjQ8EmPIhHYyk0fDGKhpgbV4svB\nCHHZ4DJxAgMBAAECggEAAKI0t8dwpBRbah098v7XfwAwmAW1On8alNdnHRlxfPpI\n8EBh2wXDRzfF+u47dFJq2CIAdbzdpOKKbeuZ91bTq1VjbIgN4HZb4mXLeFy8qCZc\nJUPgqBps6SX1Ibn32YRtIbka1i0ociiWgByU1+3EEtabEz1ecTDn2KMUhkRhGXxX\npJPfJWWKzoJyMjHc/CKQzOAU083nqeTx+GMiWdCZm5xpHgBzqMCNiszlfV833Cox\nChukJHK4xdOQtnAd3BVwlG/stAxcgFxmPf1Gj5ShGY34mOq0JIBmQkgFwOMoWBem\npyluaDX8Vv9PWWx9LpVYtl2VKXQCSeq1CfJlIEHMAQKBgQDtYiv9pfBkd/alKqB7\n3HDk+IYMHtGH19qzIxIf67izjz3n4kKmZwrLFZyhLFxFDr1vUfmA7ZS/yEoUvCWi\nYhqp1yYyppcgal/arOuyu/9jzVTgat5EADsBOWEEbduZY/TCNOjXgjxqUBw+Xm/z\nPugP+rXMNPwxf+RDe2gNgT7XgQKBgQDTEc9/IPX+uTWAyKLuPgmVW8plV4R7+22m\nlWXjihWYbYO7cminX7Vnaeh4pKSDxwkIAJ0QMJtYWHZ+RzSNr3gOcluAPpArU4gK\nJ0yqpUohqZsPCRyWq57w2jk5E0dPlH1Y6ov169vubFYjpLluwKlfeaaXlnyyO6e1\n79Yy5LBS8QKBgA9Atpjmt6qM9sEoGwW6ZVqhCWPv+wCigv/tqfV5HPYUpyKmLCgr\nCMuByP2mLwuU5eEoQELjgSJNiU0JxdVIPnRZSbAJej5v91bCs6ZZZBCSmfiNhViT\nNzdd63jwYiLaBFkSMz/ds2oVWas8QC8+BIU6U8IaSXYYxJ79Z/MuMc6BAoGAVNmy\nGp87hR0bfxwpM7FI1PxDjx3xqo3W9MLWZPSb3d0YugAyRibZnCsdQ3KcmEUpQkhM\n27dOm+NkLzucyuChWN1sH1AHUQORitNlpKwx8vpl1VOKZJ+1k4mGu4Ueg8Vj5pzT\nixc4IM74ifese/ODo1gaOpJKqrQEpcU2zNrWb2ECgYEAv5mKMEhBoEpEudcFnsOq\nfa1mMtlT31K1GtJPktE70YWW7Tgys+J5Q6266bSdHRw0wuIhtewpUj6+3J5YpyTz\n0FzlNNah5h16C6C9mSHbIwOSp30c4cxwc05xBFtW1Xi86GYklV0trH4ef/KTsjXa\n/4oZk97O83lmG7I2UrH6E7o=\n-----END PRIVATE KEY-----\n",
+  "client_email": "llinsalves1-482@apt-entropy-289618.iam.gserviceaccount.com",
+  "client_id": "103717193425732793509",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/llinsalves1-482%40apt-entropy-289618.iam.gserviceaccount.com"
+}
