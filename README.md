@@ -1,6 +1,6 @@
 # boavista-project
-# Pipeline GCP Dataflow
-# Construção de programa Python para carga dos dados no BigQuery e criação de job Dataflow diretamente no console da plataforma GCP
+ Pipeline GCP Dataflow
+ Construção de programa Python para carga dos dados no BigQuery e criação de job Dataflow diretamente no console da plataforma GCP
 
 Criei 2 formas de subir o dado para o Storage
 1 - via job do Data transfer
