@@ -1,6 +1,6 @@
 # boavista-project
 
-#Instalação do gsutil para realizara transferencia do dado para o Storage
+Instalação do gsutil para realizara transferencia do dado para o Storage
 
 Utilizado o SO Linux:
 curl https://sdk.cloud.google.com | bash
@@ -59,5 +59,16 @@ gcr.io/cloud-ingest/tsop-agent:latest \
 #Configurando credential do google para execução do programa copia_arq_bucket.py
 set GOOGLE_APPLICATION_CREDENTIALS="/home/leonardo/Entrevista/key_access/key_2.json"
 
+###### Job Dataflow
+Nome Job: visualization_data_bigquery
 
 
+python -m apache_beam.examples.wordcount_minimal --input YOUR_INPUT_FILE --output counts
+
+#Extraindo relatório dos arquivos carregados
+python -m apache_beam.examples.wordcount --input gs://teste_boavista/source_data/ \
+                                         --output gs://apt-entropy-289618/counts \
+                                         --runner DataflowRunner \
+                                         --project apt-entropy-289618 \
+                                         --region us-central1 \
+                                         --temp_location gs://apt-entropy-289618/temp
