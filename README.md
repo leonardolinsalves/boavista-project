@@ -77,4 +77,4 @@ python -m apache_beam.examples.wordcount --input gs://teste_boavista/source_data
                                          --runner DataflowRunner \
                                          --project apt-entropy-289618 \
                                          --region us-central1 \
-                                         --temp_location gs://apt-entropy-289618/temp 
+                                         --temp_location gs://apt-entropy-289618/temp  
