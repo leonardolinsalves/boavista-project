@@ -1,12 +1,8 @@
 # boavista-project
- Pipeline GCP Dataflow
- Construção de programa Python para carga dos dados no BigQuery e criação de job Dataflow diretamente no console da plataforma GCP
 
-Criei 2 formas de subir o dado para o Storage
-1 - via job do Data transfer
-2 - via programas Python citados aqui no GitHub - Realizam validações simples, porém, ajudam na qualidade do processo.
+Projeto de criação de Pipeline na GCP, utilizando 2 formas diferentes - Job Data Transfer, Processo com programas Python para execução local
 
-Instalação do gsutil para realizara transferencia do dado para o Storage
+ Instalação do gsutil para realizar a transferencia do dado para o Storage
 
 Utilizado o SO Linux:
 curl https://sdk.cloud.google.com | bash
@@ -17,11 +13,12 @@ exec -l $SHELL
 Executando:
 gcloud init
 
-######## Bucket criado com os dados disponibilizados
+
+##Informações utilizadas para capturar o arquivo via JOB Data Transfer
+######## Bucket
 Nome do Bucket: test_boavista
 repositorio origem: source_data
 
-######## Envio via Job do Data transfer
 ######## Criação do Job de Transferencia do arquivo "comp_boss" para Bucket
 -Nome do Job: 8084082977519456458  
 -Nome do arquivo: comp_boss
@@ -49,8 +46,6 @@ repositorio origem: source_data
 -Bucket destino: test_boavista/source_data
 -Descrição do Job:Mover o arquivo price_quote.csv para o bucket test_boavista
 
-
-#Anotações
 ######## Instalação do Agente Docker para transferir dados Locais para o Cloud Storage (recursos do Cloud Pub/Sub)
 
 --Configuração do Agente
@@ -68,8 +63,17 @@ gcr.io/cloud-ingest/tsop-agent:latest \
 #Configurando credential do google para execução do programa copia_arq_bucket.py
 set GOOGLE_APPLICATION_CREDENTIALS="/home/leonardo/Entrevista/key_access/key_2.json"
 
+# Execução da captura via Programas Python
+
+- Se faz necessário importar os programas do Git e observar aos Paths colocados, que estão hardcoded.
+- Após alterar os PATH's rodar o main.py, ele orquestrará todo o processo.
+
+
 ###### Job Dataflow
 Nome Job: visualization_data_bigquery
+
+
+python -m apache_beam.examples.wordcount_minimal --input YOUR_INPUT_FILE --output counts
 
 #Extraindo relatório dos arquivos carregados
 python -m apache_beam.examples.wordcount --input gs://teste_boavista/source_data/ \
@@ -77,4 +81,4 @@ python -m apache_beam.examples.wordcount --input gs://teste_boavista/source_data
                                          --runner DataflowRunner \
                                          --project apt-entropy-289618 \
                                          --region us-central1 \
-                                         --temp_location gs://apt-entropy-289618/temp  
+                                         --temp_location gs://apt-entropy-289618/temp
